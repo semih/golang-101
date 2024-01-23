@@ -1,11 +1,23 @@
 package main
 
-func main() {
-	//Fixed
-	/*var names [3]string
-	names[0] = "abc"
-	names[1] = "def"
-	names[2] = "ghi"
-	fmt.Println(names)*/
+import "fmt"
 
+func main() {
+	//Fixed Arrays
+	/*var letters [3]string
+	letters[0] = "abc"
+	letters[1] = "def"
+	letters[2] = "ghi"
+	fmt.Println(letters)*/
+
+	/*var letters = [3]string{"abc", "def", "ghi"}
+	fmt.Println(letters)
+	fmt.Println(letters[0:2])*/
+
+	//Slices
+	var letters = []string{"abc", "def", "ghi", "jkl"}
+	fmt.Println(letters)
+
+	letters = append(letters, "mno")
+	fmt.Println(letters)
 }
